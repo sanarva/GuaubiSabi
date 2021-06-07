@@ -1,0 +1,1430 @@
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat|Questrial|Raleway|Righteous|Patrick+Hand');
+/**+**************************************************************************************************/
+/**                                        GENERAL                                                  **/
+/**+**************************************************************************************************/
+*
+    {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+h1
+    {
+    font-size: 30px;
+    font-family: Patrick Hand;
+    color: #323232;
+    margin: 20px 40px;
+    }
+
+h2
+    {
+    font-size: 20px;
+    font-family: Patrick Hand;
+    color:#323232;
+    margin: 10px 50px ;
+    }
+
+h6
+   {
+    padding: 50px;
+    }
+
+p
+    {
+    font-size: 16px;
+    font-family:'Questrial', sans-serif;
+    line-height: 1.2;
+    padding: 20px 40px;
+    text-align: justify;
+    }
+
+a 
+    {
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+    font-family:'Questrial', sans-serif;
+    line-height: 1.2;
+    text-align: justify;
+    transition: all .4s;
+    }
+
+.caracteristicas ul, .caracteristicas li 
+    {
+    font-size: 16px;
+    font-family:'Questrial', sans-serif;
+    line-height: 1.2;
+    text-align: justify;
+    margin: auto 40px ;
+    }
+
+.hr1
+    {
+    width: 98%;
+    margin: 10px auto;
+    border-color: #323232;
+    height: 2px;
+    }
+
+.hr2
+    {
+    width: 75%;
+    margin: auto 20% auto 0%;
+    color: #323232;
+    }
+
+@media only screen and (max-width: 950px)
+{
+h6
+    {
+    display: none;
+    }
+}
+
+/**+**************************************************************************************************/
+/*                                              INDICE                                               */
+/**+**************************************************************************************************/
+/**                                            CABECERA                                              */
+/**+**************************************************************************************************/
+header
+    {
+    background: #fff;
+    width: 100%; 
+    position: fixed;
+    z-index: 100;
+    }
+
+header img
+    {
+    width: 3%;
+    display: block;
+    margin: auto;
+    }
+
+header h1
+    {
+    color: #9F7200;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    }
+
+/*****************************************************************************************************/
+/*                                       INDICE                                                      */
+/*****************************************************************************************************/
+/**                               MENU DE NAVEGACIÓN PC                                             **/
+/*****************************************************************************************************/
+
+#menu-container, #header2
+    {
+     display:none;
+    }
+
+nav
+    {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    background: #fff;
+    border-top: 1px #000 solid;
+    border-bottom: 1px #000 solid;  
+    }
+ 
+nav ul
+    {
+    list-style: none;
+    }
+        
+.menu > li
+    {
+     position: relative;
+     display: inline-block   
+    }
+
+.menu > li > a
+    {
+     display: block;
+     padding: 7px 15px;
+     color: #000;
+     font-family: 'Raleway', sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     text-decoration: none;  
+    }
+        
+.menu li a:hover
+    {
+     color: #fff;
+     background: #323232;
+     transition: all .4s;  
+    } 
+
+/********************************************/
+.submenu
+    {
+     position: absolute;
+     width: 180%;
+     visibility: hidden;
+    } 
+
+.submenu > li > a
+    {
+     background-color: white;
+     display: block;
+     padding: 7px 10px;
+     color: #000;
+     font-family: 'Raleway', sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     text-decoration: none;
+     text-align: left;
+     
+    }
+ 
+.menu li:hover .submenu
+    {
+    visibility: visible;
+    } 
+
+.submenu li a:hover
+    {
+     color: #fff;
+     background: #323232;
+     transition: all .4s; 
+    } 
+
+/*****************************************************************************************************/
+/*                                      INDICE                                                       */
+/*****************************************************************************************************/
+/**                      MENU DE NAVEGACIÓN DISPOSITIVOS MOVILES                                    **/
+/*****************************************************************************************************/
+
+@media only screen and (max-width: 950px)
+{
+    
+header
+    {
+    display: none;
+    }
+    
+#header2 h1
+    {
+    color: #9F7200;
+    font-size: 10px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    padding-top: 30px;
+    margin: 2%
+    }
+
+#header2
+    {
+    background: white;
+    width: 100%;
+    display: block;
+    margin-top:70px;
+    }
+    
+#menu-container
+    {
+    display: inline;
+    }
+
+#menu-container ul 
+    { 
+    list-style: none;
+    }
+
+#menu-container a 
+    { 
+    text-decoration: none; 
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    }
+    
+#menu-wrapper 
+    {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    z-index: 999;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    }
+
+#menu-wrapper #hamburger-menu 
+    {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    margin: 15px;
+    display: inline-block;
+    float: left;
+    }
+
+#menu-wrapper #hamburger-menu span 
+    {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    color: black;
+    background-color: #000;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    }
+    
+ #menu-wrapper #menuss p
+    {
+    display: inline-block;
+    float: left;
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    
+#menu-wrapper img
+    {
+    width: 50px;
+    display: inline-block;
+    float: right;
+    margin: 1% 2%;  
+    }
+
+#menu-wrapper #hamburger-menu span:nth-child(1) 
+    {
+    top: 0;
+    }
+    
+#menu-wrapper #hamburger-menu span:nth-child(2) 
+    {
+    top: 9px;
+    }
+    
+#menu-wrapper #hamburger-menu span:nth-child(3) 
+    {
+    top: 18px;
+    }
+    
+#menu-wrapper #hamburger-menu.open span:nth-child(1) 
+    {
+    top: 9px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    }
+    
+#menu-wrapper #hamburger-menu.open span:nth-child(2) 
+    {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    left: -60px;
+    }
+    
+#menu-wrapper #hamburger-menu.open span:nth-child(3) 
+    {
+    top: 9px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    }
+
+#menu-container .menu-list .menu-submenu li 
+    {
+    padding: 10px;
+    }
+    
+#menu-container .menu-list 
+    {
+    padding-left: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    box-shadow: rgba(100,100,100,0.2) 6px 2px 10px;
+    z-index:  99;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: -100%;
+    }
+
+#menu-container .menu-list li.accordion-toggle, #menu-container .menu-list .menu-login
+    ,#menu-container .menu-list li.no-accordion-toggle
+    {
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-top: 1px solid #dbdcd2; 
+    text-align: center;
+    }
+    
+#menu-container .menu-list li:first-of-type 
+    {
+    border-top: 0; 
+    }
+
+.accordion-toggle, .accordion-content, .no-accordion-toggle 
+    {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    letter-spacing: 1px;  
+    }
+
+.accordion-content 
+    {
+    display: none;
+    }
+
+.accordion-toggle a:before, .accordion-toggle a:after
+    {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 15px;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #5a5858;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s ease-out;
+    }
+
+.accordion-toggle a:before 
+    {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 1;
+    z-index: 2;
+    }
+
+.accordion-toggle.active-tab 
+    {
+    background: rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    }
+    
+.accordion-toggle a.active:before 
+    {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background: #fff !important;
+    }
+
+.accordion-toggle a.active:after 
+    {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background: #fff !important;
+    opacity: 0;
+    }
+    
+#nav1:hover, #nav2:hover,#nav3:hover,#nav4:hover,#nav5:hover,#nav6:hover,#nav7:hover,#nav8:hover
+    {
+    color: #fff;
+    background: #323232;
+    transition: all .4s; 
+    } 
+
+.menu-submenu a:hover
+    {
+     color: #fff;
+     background: #323232;
+     transition: all .4s; 
+    }
+
+#menu-container
+    {
+     position: fixed;
+     width: 100%;
+     z-index: 999;
+    }
+}
+
+
+/**+**************************************************************************************************/
+/*                                           INDICE                                                  */
+/**+**************************************************************************************************/
+/**                                       FOTO PORTADA                                               */
+/**+**************************************************************************************************/
+
+.index, .telas, .frases, .productos, .dispensadores, .monederos, .chuches, .etiquetas, .comprar, .promociones, .historias, .agradecimientos, .cuidados
+    {
+    overflow: hidden;
+    }
+
+/**+**************************************************************************************************/
+/*                                           INDICE                                                  */ /**+**************************************************************************************************/
+/*                                          PRODUCTOS                                                */
+/**+**************************************************************************************************/
+
+.productos
+    {
+    margin: 10px auto 20px auto;
+    }
+
+.productos p
+    {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+.productos .disp a
+    {
+    float: left;
+    padding: 10% ;
+    background-image: url('../imagenes/dispensador1.jpg');
+    border-radius: 7px;
+    margin-left: 2.5%;
+    background-size: cover;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-decoration:none;
+    }
+
+.productos .disp a:hover 
+    {
+    background-image: url('../imagenes/dispensador2.jpg');
+    }
+
+.productos .bolsas a
+    {
+    float: left;
+    padding: 10% ;
+    background-image: url('../imagenes/bolsas1.jpg');
+    border-radius: 7px;
+    margin-left: 5%;
+    background-size: cover;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-decoration:none;
+    }
+
+.productos .bolsas a:hover 
+    {
+    background-image: url('../imagenes/bolsas2.jpg');
+    }
+
+.productos .mone a
+    {
+    float: left;
+    padding: 10% ;
+    background-image: url('../imagenes/monedero1.jpg');
+    border-radius: 7px;
+    margin-left: 5%;
+    background-size: cover;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-decoration:none;
+    }
+
+.productos .mone a:hover 
+    {
+    background-image: url('../imagenes/monedero2.jpg');
+    }
+
+.productos .eti a
+    {
+    float: left;
+    padding: 10% ;
+    background-image: url('../imagenes/etiquetas1.jpg');
+    border-radius: 7px;
+    margin-left: 5%;
+    background-size: cover;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-decoration:none;
+    }
+
+.productos .eti a:hover 
+    {
+    background-image: url('../imagenes/etiquetas2.jpg');
+    }
+
+
+@media only screen and (max-width: 950px)
+{
+.productos p
+    {
+    padding: 10px;
+    font-size: 16px;
+    }
+
+.productos .disp a, .productos .bolsas a, .productos .mone a, .productos .eti a
+    {
+        padding: 20% ;
+        margin-left: 7%;
+    }
+
+.productos .disp a, .productos .bolsas a
+    {
+        margin-bottom: 5% ;
+        margin-left: 7%;
+    }
+    
+}
+
+
+/**+**************************************************************************************************/
+/*                                   INDICE                                                          */
+/**+**************************************************************************************************/
+/**                                SOBRE LEROY                                                      **/
+/**+**************************************************************************************************/
+
+.ancla_sobre_leroy P
+    {
+    margin-top: 0px;
+    position: absolute;
+    padding: 60px;
+    margin-top: -130px;
+    visibility: hidden;
+    }
+
+.sobre_leroy .img1
+    {
+    width: 30%;
+    display: block;
+    margin: auto 40px;
+    float: left;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    }
+
+.sobre_leroy #p1
+    {
+    padding: 0px 40px;
+    text-align: justify;
+    margin-bottom: 1%
+    }
+
+#video_leroy
+    {
+    width: 630px;
+    height: 355px;
+    display: block;
+    background: black;
+    margin: auto;
+    }
+
+@media only screen and (max-width: 630px)
+{
+ #video_leroy
+    {
+     width: 315px;
+     height: 178px;}
+}
+
+
+/**+**************************************************************************************************/
+/*                                   INDICE                                                          */
+/**+**************************************************************************************************/
+/**                             SOBRE GUAUBI SABI                                                   **/
+/**+**************************************************************************************************/
+.ancla_sobre_guaubisabi p
+    {
+    margin-top: 0px;
+    position: absolute;
+    padding: 70px;
+    margin-top: -130px;
+    visibility: hidden;
+    }
+
+
+.sobre_guaubisabi h1, .sobre_leroy h1
+    {  
+    padding: 20px;
+    border-radius: 7px; 
+    background: #9F7200;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 0px;
+    }
+
+.sobre_guaubisabi .p1
+    {
+    padding: 20px 40px;
+    text-align: justify;
+    }
+
+/**+**************************************************************************************************/
+/*                                   INDICE                                                          */
+/**+**************************************************************************************************/
+/**                                 CONTACTAR                                                       **/
+/**+**************************************************************************************************/
+/* FORMULARIO */
+
+.ancla_contactar p
+    {
+    margin-top: 0px;
+    position: absolute;
+    padding: 50px;
+    margin-top: -130px;
+    visibility: hidden;
+    }
+
+/* Formulario de contacto*/
+
+form.form_contact
+    {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    background-image: url('../imagenes/fondo80.jpg');
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+form.form_contact h1
+    {
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+    text-align: center;
+    }
+
+form.form_contact hr
+    {
+    margin: auto 4% 4% 4%;
+    }    
+    
+form.form_contact .user_info
+    {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    }
+
+form.form_contact label
+    {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: left;
+    }
+
+form.form_contact input,
+form.form_contact textarea
+    {
+    margin-left: 5px;
+    width: 50%;
+    padding: 8px 0px 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+    font-family: 'Raleway', sans-serif;
+	color: #5A5A5A;
+	font-size: 15px;
+	font-weight: 400;
+    }
+
+form.form_contact textarea
+    {
+    max-width: 70%;
+    min-width: 70%;
+    max-height: 90px;
+    margin-left: 5px;
+    }
+
+form.form_contact input[type="submit"]
+    {
+    width: 180px;
+	background: #323232;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+    align-self:center;
+    color: #fff;
+	font-family: 'Righteous', cursive;
+	font-size: 16px;
+	cursor: pointer;
+    }
+
+form.form_contact input[type="submit"]:hover
+    {
+    color: #EDDAA6;
+    opacity: 0.9;
+    }
+ 
+/* Ventana de errores */
+
+.modal_wrap
+    {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.mensaje_modal
+    {
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+    }
+
+.mensaje_modal h3
+    {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+    color: #606060;
+    }
+
+.mensaje_modal h3:after
+    {
+    content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #C5C5C5;
+	margin: 10px 0px 15px;
+    }
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before
+    {
+    content: "\f00d";
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+    }
+
+#btnClose
+    {
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+    font-family: 'Righteous', cursive;
+	background: #E25151;
+	color: #fff;
+	border: 2px solid #B14141;
+    border-radius: 10px;
+	cursor: pointer;
+	float: right;
+    }
+
+/* mensaje enviado */
+
+.mensaje-exito
+    {
+    width: 70%;
+    margin: 200px auto;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+.mensaje-exito h1{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+.mensaje-exito p
+    {
+    text-align: center;
+    margin-bottom: 50px;
+    }
+
+.mensaje-exito a
+    {
+    display: block;
+    padding: 10px ;
+    background: #323232;
+    border-radius: 7px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Questrial', sans-serif;
+    text-align: center;
+    font-weight: bold; 
+    }
+
+.mensaje-exito a:hover
+    {
+    color: #EDDAA6;
+    font-size: 21px;
+    }
+
+/**+**************************************************************************************************/
+/*                                             INDICE                                                */
+/**+**************************************************************************************************/
+/**                                            FOOTER                                                */
+/**+**************************************************************************************************/
+footer
+    {
+    width: 100%;
+    background: #323232;
+    }
+
+footer p
+    {
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    }
+
+#footer2 img
+    {
+    margin: 0 5px -5px 25px;
+    width: 20px;
+    }
+
+#footer2 p, #footer2 a
+    {
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    font-size: 12px;
+    }
+
+
+#footer3 img
+    {
+    width: 3%;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    }
+    
+
+#footer3 a
+    {
+    color: #fff;
+    font-family: 'Righteous', cursive;
+    display: block;
+    margin: auto;
+    text-align: center;
+    }
+
+#footer3 a:hover
+    {
+    color: #EDDAA6;
+    } 
+
+/**+**************************************************************************************************/
+/*                                   PÁGINA DISPENSADORES                                            */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+
+.d1_galeria, .d2_galeria,  .m1_galeria, .m2_galeria, .b1_galeria, .b2_galeria
+    {
+    margin-bottom: 20px;
+    }
+/**+**************************************************************************************************/
+/*                                   PÁGINA MONEDEROS                                                */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+ .m1_galeria, .m2_galeria
+    {
+ 
+    }
+/**+**************************************************************************************************/
+/*                                   PÁGINA BOLSA DE CHUCHES                                         */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+.b1_galeria, .b2_galeria
+    {
+
+    }
+
+
+/**+**************************************************************************************************/
+/*                                PÁGINA FRASES BOLSA CHUCHES                                        */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+
+.frases img
+    {
+    display: block;
+    margin: auto auto;
+    width: 70%;
+    }
+
+/**+**************************************************************************************************/
+/*                                   PÁGINA MONEDEROS                                                */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+
+
+
+/**+**************************************************************************************************/
+/*                                   PÁGINA ETIQUETAS ARNÉS                                          */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+.etiquetas img
+    {
+    width: 40%;
+    display: block;
+    float: left;
+    margin: auto 3% auto 7%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    }
+ 
+.e_galeria
+    {
+    width: 90%;
+    }
+
+#gallery_et
+    {
+    clear: left;
+    }
+
+
+/**+**************************************************************************************************/
+/*                                   PÁGINA TELAS                                                    */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+
+h4
+    {
+     visibility: hidden;  
+    }
+
+.tela h1
+    {padding: 10%;
+    text-align: center;
+    color: #000000;
+    margin: auto;
+    }
+
+@media only screen and (max-width: 950px)
+{
+.tela h1
+    {
+    font-size: 20px;
+    }
+}
+
+.dib a
+    {
+    float: left;
+    background-image: url('../imagenes/flamenco.jpg');
+    border-radius: 7px;
+    margin-left: 3%;
+    background-size: cover;
+    background-position: center center; 
+    width: 30%;
+    text-decoration:none;
+    }
+
+.dib a:hover 
+    {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+      ),url('../imagenes/flamenco.jpg');
+    }
+
+.flor a
+    {
+    float: left;
+    background-image: url('../imagenes/telas/Flower_power_y_vintage/Flores_15.jpg');
+    border-radius: 7px;
+    background-size: cover;
+    background-position: center center; 
+    width: 30%;
+    margin: auto 2%;
+    text-decoration:none;
+    }
+
+.flor a:hover 
+    {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+      ),url('../imagenes/telas/Flower_power_y_vintage/Flores_15.jpg');
+    }
+
+.topo a
+    {
+    float: left;
+    background-image: url('../imagenes/telas/Topitos/Rojo-P_Blanco.jpg');
+    border-radius: 7px;
+    background-size: cover;
+    background-position: center center; 
+    width: 30%;
+    margin-right: 3%;
+    text-decoration:none;
+    }
+
+.topo a:hover 
+    {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+      ),url('../imagenes/telas/Topitos/Rojo-P_Blanco.jpg');
+    }
+
+.t_galeria
+    {
+    margin-bottom: 1%;
+    }
+
+/**+**************************************************************************************************/
+/*                                  PÁGINA COMPRAR                                                  */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+
+.comprar h1
+    {
+    float: left;
+    background: #323232;
+    color: #fff;
+    border-radius: 7px;
+    text-align: center;
+    width: 25%;
+    margin: auto 4% auto 4%;
+    }
+
+.pasos ul 
+    {
+    text-align: center;
+     font-weight: 600px;   
+    }
+
+.pasos li
+    {
+    text-align: left;
+    list-style: none;
+    }
+
+.comprar .pasos
+    {
+    float: left;
+    background: #C3BBA8;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+    border-radius: 7px;
+    padding: 20px;
+    width: 25%;
+    margin: auto 4% 2% 4%;
+    }
+
+.comprar .hr2
+    {
+    width: 95%;
+    }
+
+.comprar a
+    {
+    background: #C3BBA8;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    }
+
+.comprar a:hover
+    {
+    color:#fff;
+    }
+
+.comprarmovil
+    {
+    display: none;
+    }
+
+@media only screen and (max-width: 750px)
+{
+    
+.pasos, .comprar h1
+    {
+    display: none;
+    }
+    
+.comprarmovil
+    {
+    display:block;
+    background: #C3BBA8;
+    width: 90%;
+    margin: auto;
+    border-radius: 7px;
+    margin-bottom: 2%;
+    }
+
+.comprarmovil h1, #contact a
+    {
+    background: #323232;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 7px;
+    padding: 10px;
+    margin: auto;
+    width: 90%
+    }
+    
+.comprarmovil p, .comprarmovil a
+    {
+    padding: 0px;
+    }
+    
+.comprarmovil p, .comprarmovil a
+    {
+    padding-left: 20%;
+    padding-bottom: 1%;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+    text-align: left;
+    color: #000;
+    text-decoration: none;
+    }
+
+.comprarmovil a:hover
+    {
+    color:#fff;
+    }
+        
+}
+/**+**************************************************************************************************/
+/*                            PÁGINA DESCUENTOS Y PROMOCIONES                                        */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+.promociones h1
+    {
+    background: #323232;
+    padding: 1%;
+    border-radius: 7px;
+    color: #fff;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    }
+
+.promociones .img1 
+    {
+    display: block;
+    margin: auto;
+    align-content: center;
+    width: 300px;
+    }
+
+/**+**************************************************************************************************/
+/*                                PÁGINA COLABORACIONES                                              */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+
+.colaboraciones0 h1
+    {
+    background: #323232;
+    border-radius: 7px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: auto auto;
+    }
+
+@media only screen and (max-width: 950px)
+{
+.colaboraciones0 h1 
+    {
+    font-size: 20px;
+    }
+}
+
+.colaboraciones0 img
+    {
+    display: block;
+    margin: auto auto;
+    }
+
+
+.colaboraciones
+    {
+    margin: 3% 2% ;
+    }
+
+.colaboraciones h1
+    {
+    background: #323232;
+    border-radius: 7px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+
+.div1
+    {
+    background: #CEC8B8;
+    border-radius: 7px;
+    }
+
+.div1 .imgs
+    {
+    text-align: center;
+    padding: 2%; 
+    }
+
+.div1 img
+    {
+    margin: auto 2%;
+    }
+
+.div1 a
+    {
+    margin: auto 2%;
+    border: solid #000000;
+    padding: 10px;
+    font-family:'Questrial', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    }
+
+.div1 a:hover
+    {
+    color: #fff; 
+    background: #323232;
+    border: solid #323232;
+    }
+
+/**+**************************************************************************************************/
+/*                            PÁGINA HISTORIAS CON FINAL FELIZ                                       */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+
+#header2 h1
+    {
+    background-color:#fff;
+    }
+
+.lolo, .scotty, .tronca, .goku
+    {
+    margin: 1%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+.historias h1
+    {
+    text-align: center;
+    background: #000000;
+    margin: auto 20%;
+    border-bottom: solid 2px #fff;
+    border-radius: 7px;
+    padding: 10px;
+    }
+
+.historias a
+    {
+    color: #000;  
+    }
+
+.historias iframe 
+    {
+    text-decoration: none;
+    display: block;
+    margin: auto auto;
+    width: 400px;
+    height:400px;
+    display: block;
+    }
+
+.lolo h1
+    {
+    color:greenyellow;
+    }
+
+.scotty h1
+    {
+    color: #AB609C;;
+    }
+
+.tronca h1
+    {
+    color: #00ABDD;
+    }
+
+.goku h1
+    {
+    color: #D0E816;
+    }
+
+.goku iframe
+    {
+    width:500px; 
+    height:375px; 
+    }
+
+@media only screen and (max-width: 950px)
+{
+.historias iframe
+    {
+    width:300px; 
+    height:300px; 
+    }
+}
+/**+**************************************************************************************************/
+/*                                PÁGINA AGRADECIMIENTOS                                             */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+
+
+
+/**+**************************************************************************************************/
+/*                                    PÁGINA CUIDADOS                                                */
+/**+**************************************************************************************************/
+/**                                                                                                 **/
+/**+**************************************************************************************************/
+.cuidados ul, .cuidados li
+    {
+    font-size: 16px;
+    font-family:'Questrial', sans-serif;
+    line-height: 1.2;
+    text-align: justify;
+    margin: auto 40px ;
+    }
