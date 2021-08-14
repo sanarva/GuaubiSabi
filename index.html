@@ -275,22 +275,22 @@
         <!---------------------------------INICIO FORMULARIO-------------------------------------------------->
         <article class="form_wrap">
 
-            <form action="php/enviar.php" method="post" class="form_contact">
+            <form method="post" action="#" class="form_contact" id="formularioContacto" onsubmit="return contactForm()">
                 <h1>Envíanos un mensaje</h1>
                 <hr>
                 <div class="user_info">
                     <label for="names">Nombre *</label>
-                    <input type="text" id="names" name="nombre" required>
+                    <input type="text" id="names" name="nombre" placeholder="Ej. Ana Ruiz">
                     <br>
                     <label for="email">Email *</label>
-                    <input type="text" id="email" name="correo" required>
+                    <input type="text" id="email" name="correo" placeholder="Ej. anaruiz@email.com">
                     <br>
-                    <label for="phone">Asunto</label>
-                    <input type="text" id="phone" name="telefono">
+                    <label for="subject">Asunto *</label>
+                    <input type="text" id="subject" name="subject" placeholder="Ej. Personalización dispensador">
                     <br>
                     <label for="mensaje">Mensaje *</label>
                     <br>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <textarea id="mensaje" name="mensaje" placeholder="Explícanos tu consulta"></textarea>
                     <input type="submit" value="Enviar Mensaje" id="btnSend">
                 </div>
             </form>
